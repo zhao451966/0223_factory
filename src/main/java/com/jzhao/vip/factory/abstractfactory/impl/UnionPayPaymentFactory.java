@@ -9,7 +9,7 @@ import com.jzhao.vip.factory.product.impl.*;
 public class UnionPayPaymentFactory implements IPaymentFactory {
 
     public IPaymentBefore createPaymentBefore() {
-        return new UnionPayIPaymentBefore();
+        return new UnionPayPaymentBefore();
     }
 
     public IPayment createPayment() {
@@ -17,6 +17,6 @@ public class UnionPayPaymentFactory implements IPaymentFactory {
     }
 
     public IPaymentAfter createPaymentAfter() {
-        return new UnionPayIPaymentAfter();
+        return new UnionPayPaymentAfter();
     }
 }

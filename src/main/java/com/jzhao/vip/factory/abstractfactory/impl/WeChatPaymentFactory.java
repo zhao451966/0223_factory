@@ -9,7 +9,7 @@ import com.jzhao.vip.factory.product.impl.*;
 public class WeChatPaymentFactory implements IPaymentFactory {
 
     public IPaymentBefore createPaymentBefore() {
-        return new WeChatIPaymentBefore();
+        return new WeChatPaymentBefore();
     }
 
     public IPayment createPayment() {
@@ -17,6 +17,6 @@ public class WeChatPaymentFactory implements IPaymentFactory {
     }
 
     public IPaymentAfter createPaymentAfter() {
-        return new WeChatIPaymentAfter();
+        return new WeChatPaymentAfter();
     }
 }
